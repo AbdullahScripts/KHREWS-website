@@ -25,7 +25,7 @@ const GalleryImages = ({ slice }: GalleryImagesProps): JSX.Element => {
       <div className="grid w-[90%] m-auto grid-cols-2 md:grid-cols-3 mb-5 gap-4">
         {slice.items.map((item, index) => {
           return (
-            <div>
+            <div key={index}>
               <h1 className="text-red-800 p-2 font-mono font-bold text-xs md:text-2xl">
                 {item.image_title}
               </h1>

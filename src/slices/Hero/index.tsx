@@ -1,5 +1,6 @@
 "use client";
 import { Content } from "@prismicio/client";
+
 import { PrismicNextImage, PrismicNextLink } from "@prismicio/next";
 // import Carousel from "@/app/(components)/Carasoul";
 import { useRouter } from "next/navigation";
@@ -21,7 +22,6 @@ const Hero = ({ slice }: HeroProps): JSX.Element => {
   const handleClick = () => {
     router.push("/about"); // Replace '/your-page' with the actual page path
   };
-
   return (
     <section
       data-slice-type={slice.slice_type}
@@ -29,7 +29,7 @@ const Hero = ({ slice }: HeroProps): JSX.Element => {
     >
       <header>
         <div className="bck mb-4 ">
-        {/* <PrismicNextImage className="max-w-full" field={slice.primary.hero_image} /> */}
+          {/* <PrismicNextImage className="max-w-full" field={slice.primary.hero_image} /> */}
           <div className="tt">
             <h1 className=" font-bold text-xl md:text-4xl ">
               Wellcome to KHREWS official Website
@@ -60,43 +60,48 @@ const Hero = ({ slice }: HeroProps): JSX.Element => {
 
       {/* braches cards  */}
 
-
-<div className="branchCards m-4 p-5 flex flex-wrap justify-around">
-  {slice.items.map((item, index) => {
-    return (
-      <div key={index} className="w-full md:w-[27%] m-5 bg-white border border-gray-200 rounded-lg shadow">
-        <div className="flex justify-center">
-          <PrismicNextImage className="w-[70%]" field={item.logo} />
-        </div>
-        <div className="p-5">
-          <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900">{item.name}</h5>
-          <p className="mb-3 font-normal text-gray-700">{item.description}</p>
-          <p className="inline-flex items-center justify-center px-3 py-2 text-sm font-medium text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300">
-            <PrismicNextLink field={item.goto}>Explore us</PrismicNextLink>
-            <svg
-              className="rtl:rotate-180 w-3.5 h-3.5 ms-2"
-              aria-hidden="true"
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 14 10"
+      <div className="branchCards m-4 p-5 flex flex-wrap justify-around">
+        {slice.items.map((item, index) => {
+          return (
+            <div
+              key={index}
+              className="w-full md:w-[27%] m-5 bg-white border border-gray-200 rounded-lg shadow"
             >
-              <path
-                stroke="currentColor"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth="2"
-                d="M1 5h12m0 0L9 1m4 4L9 9"
-              />
-            </svg>
-          </p>
-        </div>
+              <div className="flex justify-center">
+                <PrismicNextImage className="w-[70%]" field={item.logo} />
+              </div>
+              <div className="p-5">
+                <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900">
+                  {item.name}
+                </h5>
+                <p className="mb-3 font-normal text-gray-700">
+                  {item.description}
+                </p>
+                <p className="inline-flex items-center justify-center px-3 py-2 text-sm font-medium text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300">
+                  <PrismicNextLink field={item.goto}>
+                    Explore us
+                  </PrismicNextLink>
+                  <svg
+                    className="rtl:rotate-180 w-3.5 h-3.5 ms-2"
+                    aria-hidden="true"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 14 10"
+                  >
+                    <path
+                      stroke="currentColor"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth="2"
+                      d="M1 5h12m0 0L9 1m4 4L9 9"
+                    />
+                  </svg>
+                </p>
+              </div>
+            </div>
+          );
+        })}
       </div>
-    );
-  })}
-</div>
-
-
-    
 
       {/* QA  */}
 
@@ -112,17 +117,17 @@ const Hero = ({ slice }: HeroProps): JSX.Element => {
         </div>
       </div> */}
       <div className="flex flex-col md:flex-row items-center justify-around">
-  <div className="md:w-[30%] max-w-xs md:max-w-none">
-    <PrismicNextImage
-      className="w-full h-auto"
-      field={slice.primary.logo}
-    />
-  </div>
-  <div className="md:w-[60%] max-w-md md:max-w-none mt-8 md:mt-0">
-    <QASection />
-  </div>
-</div>
-
+        <div className="md:w-[30%] max-w-xs md:max-w-none">
+          <PrismicNextImage
+            className="w-full h-auto"
+            //@ts-ignore
+            field={slice.primary.logo}
+          />
+        </div>
+        <div className="md:w-[60%] max-w-md md:max-w-none mt-8 md:mt-0">
+          <QASection />
+        </div>
+      </div>
     </section>
   );
 };
