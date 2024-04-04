@@ -1,0 +1,71 @@
+{
+  "id": "courses",
+  "type": "SharedSlice",
+  "name": "Courses",
+  "description": "Courses",
+  "variations": [
+    {
+      "id": "default",
+      "name": "Default",
+      "docURL": "...",
+      "version": "initial",
+      "description": "Default",
+      "imageUrl": "",
+      "primary": {
+        "heading": {
+          "type": "Text",
+          "config": {
+            "label": "heading",
+            "placeholder": ""
+          }
+        }
+      },
+      "items": {
+        "image": {
+          "type": "Image",
+          "config": {
+            "label": "image",
+            "constraint": {},
+            "thumbnails": []
+          }
+        },
+        "name": {
+          "type": "Text",
+          "config": {
+            "label": "name",
+            "placeholder": ""
+          }
+        },
+        "area": {
+          "type": "Text",
+          "config": {
+            "label": "area",
+            "placeholder": ""
+          }
+        },
+        "price": {
+          "type": "Text",
+          "config": {
+            "label": "price",
+            "placeholder": ""
+          }
+        },
+        "des": {
+          "type": "Text",
+          "config": {
+            "label": "des",
+            "placeholder": ""
+          }
+        },
+        "form": {
+          "type": "Link",
+          "config": {
+            "label": "form",
+            "placeholder": "",
+            "select": null
+          }
+        }
+      }
+    }
+  ]
+}

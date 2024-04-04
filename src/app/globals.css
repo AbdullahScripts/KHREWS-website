@@ -2,32 +2,81 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+.gallery_description p {
+  @apply text-gray-700;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+.gallery_description li {
+  @apply text-black list-item !list-decimal text-base font-semibold;
+}
+
+.gallery_description h1 {
+  @apply text-gray-700 font-bold text-lg;
+}
+
+/* hero section  */
+/* 
+.bck {
+  height: 90vh;
+  /* background-color: #710d9963; */
+  /* background-image: linear-gradient(#8450dd8c, #8450dd8c),
+    url("../assests/banner.jpg");
+  background-size: cover;
+  background-position: center;
+  position: relative; */
+/* } */ 
+/*  */
+
+/* Default styles */
+.bck {
+  height: 90vh; /* Set default height */
+  background-image: linear-gradient(#8450dd8c, #8450dd8c), url("../assests/banner.jpg");
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+/* Responsive styles */
+@media (max-width: 640px) {
+  /* Adjust height based on width */
+  .bck {
+     height: calc(100vw * 0.9); /* Set height as 90% of viewport width */
   }
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+
+
+.tt {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+/* branches  */
+
+.bheading {
+  width: 12 rem;
+  /* height: 2.5rem; */
+  border: none;
+  border-radius: 2rem;
+  background-color: #d1d2da;
+  color: #8892da;
+  display: inline-block;
+  margin-bottom: 2rem;
 }
+
+/* Custom CSS */
+.slick-slider {
+  margin: 0 auto;
+  max-width: 800px;
+}
+
+.slick-slide img {
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+

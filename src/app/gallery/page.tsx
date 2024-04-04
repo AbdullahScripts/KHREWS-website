@@ -6,16 +6,14 @@ import { components } from "@/slices";
 
 export default async function Page() {
   const client = createClient();
-  const page = await client.getSingle("home_page");
+  const page = await client.getSingle("gallery_page");
 
-  return <>
-  <SliceZone slices={page.data.slices} components={components} />
-  </>;
+  return <SliceZone slices={page.data.slices} components={components} />;
 }
 
 export async function generateMetadata(): Promise<Metadata> {
   const client = createClient();
-  const page = await client.getSingle("home_page");
+  const page = await client.getSingle("gallery_page");
 
   return {
     title: page.data.meta_title,
