@@ -80,7 +80,7 @@ const Hero = ({ slice }: HeroProps): JSX.Element => {
                 <p className="mb-3 font-normal text-gray-700">
                   {item.description}
                 </p>
-                <p className="inline-flex items-center justify-center px-3 py-2 text-sm font-medium text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300">
+                <p className="inline-flex ml-5 md:ml-0 items-center justify-center px-3 py-2 text-sm font-medium text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300">
                   <PrismicNextLink field={item.goto}>
                     Explore Us
                   </PrismicNextLink>
@@ -101,7 +101,7 @@ const Hero = ({ slice }: HeroProps): JSX.Element => {
                   </svg>
                 </p>
 
-                <p className="inline-flex ml-5 items-center justify-center px-3 py-2 text-sm font-medium text-white bg-green-700 rounded-lg hover:bg-green-900 focus:ring-4 focus:outline-none focus:ring-blue-300">
+                <p className=" mt-2 inline-flex ml-5 items-center justify-center px-3 py-2 text-sm font-medium text-white bg-green-700 rounded-lg hover:bg-green-900 focus:ring-4 focus:outline-none focus:ring-blue-300">
                   <PrismicNextLink field={item.whatsapp}>
                     Join US
                   </PrismicNextLink>
@@ -152,7 +152,7 @@ const Hero = ({ slice }: HeroProps): JSX.Element => {
               LABBAIK ENTRY TEST SERIES (FOR THOSE WHO INTEND TO TAKE ENTRY
               TEST)
             </p>
-            <p className="inline-flex items-center justify-center px-3 py-2 text-sm font-medium text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300">
+            <p className="inline-flex ml-5 md:ml-0 items-center justify-center px-3 py-2 text-sm font-medium text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300">
               <Link href="https://youtube.com/@khr_mds?si=Fd1av0JFtOLyCOLL">
                 Explore Us
               </Link>
@@ -173,7 +173,7 @@ const Hero = ({ slice }: HeroProps): JSX.Element => {
               </svg>
             </p>
 
-            <p className="inline-flex ml-5 items-center justify-center px-3 py-2 text-sm font-medium text-white bg-green-700 rounded-lg hover:bg-green-900 focus:ring-4 focus:outline-none focus:ring-green-300">
+            <p className="inline-flex mt-2 ml-5 items-center justify-center px-3 py-2 text-sm font-medium text-white bg-green-700 rounded-lg hover:bg-green-900 focus:ring-4 focus:outline-none focus:ring-green-300">
               <Link href="https://chat.whatsapp.com/HminsS7sOI3LRkQ2CSMwx3">
                 Join US
               </Link>
@@ -208,7 +208,7 @@ const Hero = ({ slice }: HeroProps): JSX.Element => {
               LABBAIK IT SERVICE (FOR THOSE RELATED TO Information Technology
               DOMAIN)
             </p>
-            <p className="inline-flex items-center justify-center px-3 py-2 text-sm font-medium text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300">
+            <p className="inline-flex ml-5 md:ml-0 items-center justify-center px-3 py-2 text-sm font-medium text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300">
               <Link href="https://www.youtube.com/@labbaikitservice">
                 Explore Us
               </Link>
@@ -229,7 +229,7 @@ const Hero = ({ slice }: HeroProps): JSX.Element => {
               </svg>
             </p>
 
-            <p className="inline-flex ml-5 items-center justify-center px-3 py-2 text-sm font-medium text-white bg-green-700 rounded-lg hover:bg-green-900 focus:ring-4 focus:outline-none focus:ring-blue-300">
+            <p className="inline-flex mt-2 ml-5 items-center justify-center px-3 py-2 text-sm font-medium text-white bg-green-700 rounded-lg hover:bg-green-900 focus:ring-4 focus:outline-none focus:ring-blue-300">
               <Link href="https://chat.whatsapp.com/KETszoJr7AA7opySAQHeku">
                 Join US
               </Link>
@@ -256,8 +256,9 @@ const Hero = ({ slice }: HeroProps): JSX.Element => {
       {/* heading branches  */}
       <div className="branches text-center pt-5">
         <Link
-          href="https://labbaikitservices.com/" target="_blank"
-          className="text-white  bg-gradient-to-br from-purple-600 to-blue-500 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2"
+          href="https://labbaikitservices.com/"
+          target="_blank"
+          className="text-white   bg-gradient-to-br from-purple-600 to-blue-500 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2"
         >
           LITS Website
         </Link>
