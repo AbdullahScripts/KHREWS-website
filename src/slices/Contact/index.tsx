@@ -11,7 +11,7 @@ const Registration = () => {
             Register Now
           </h2>
           <p className="text-lg text-gray-800 mb-4 text-center">
-            Register for our event by filling out the form below:
+            Register If You Wana Be A Part Of KHREWS:
           </p>
           <div className="flex justify-center">
             <Link
@@ -38,7 +38,7 @@ const Contact = () => {
             Contact Us
           </h2>
           <p className="text-lg text-gray-800 mb-4 text-center">
-            Reach out to us for any queries or assistance:
+            Reach Out To Us For Any Queries Or Assistance:
           </p>
           <div className="flex flex-col md:flex-row justify-center md:space-x-4">
             <Link

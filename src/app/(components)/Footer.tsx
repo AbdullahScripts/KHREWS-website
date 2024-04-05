@@ -30,14 +30,14 @@ const Footer = () => {
                     Our vision
                   </Link>
                 </li>
-                <li>
+                {/* <li>
                   <Link
                     href="/about"
                     className="hover:underline"
                   >
                   what we want
                   </Link>
-                </li>
+                </li> */}
               </ul>
             </div>
             <div>

@@ -33,7 +33,7 @@ const Hero = ({ slice }: HeroProps): JSX.Element => {
           {/* <PrismicNextImage className="max-w-full" field={slice.primary.hero_image} /> */}
           <div className="tt">
             <h1 className=" font-bold text-xl md:text-4xl ">
-              Wellcome To Official Website OF KHREWS
+              Welcome To Official Website OF KHREWS
             </h1>
             <p className="pt-4 font-outline-2 pb-4 text-sm  md:text-2xl">
               Empowering the Ummah with dedicated leadership for the ascension
@@ -55,8 +55,8 @@ const Hero = ({ slice }: HeroProps): JSX.Element => {
       <div className="branches text-center pt-5">
         <span className="bheading p-2 font-bold ">Our Physical Branches</span>
         <h1 className="text-3xl font-bold m-3">
-          here are our <span className="text-[#8892da]">branches</span> that are
-          serving the <span className="text-[#8892da]">nation</span>
+          Here Are Our <span className="text-[#8892da]">Branches</span> That Are
+          Serving The <span className="text-[#8892da]">Nation</span>
         </h1>
       </div>
 
@@ -130,8 +130,8 @@ const Hero = ({ slice }: HeroProps): JSX.Element => {
       <div className="branches text-center pt-5">
         <span className="bheading p-2 font-bold ">Our Online Services</span>
         <h1 className="text-3xl font-bold m-3">
-          here are our Online <span className="text-[#8892da]">Services</span>{" "}
-          that are serving the <span className="text-[#8892da]">nation</span>
+          Here Are Our Online <span className="text-[#8892da]">Services</span>{" "}
+          That Are Serving The <span className="text-[#8892da]">Nation</span>
         </h1>
       </div>
 
