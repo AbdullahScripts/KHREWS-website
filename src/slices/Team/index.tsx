@@ -41,7 +41,7 @@ const Team = ({ slice }: TeamProps): JSX.Element => {
             </button>
 
             <span className="text-sm text-green-600">
-              (Click on button to Download in urdu)
+              (Click to Download)
             </span>
           </li>
         </ul>
