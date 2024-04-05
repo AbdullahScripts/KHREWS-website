@@ -8,7 +8,7 @@ const Footer = () => {
       <div className="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
         <div className="md:flex md:justify-between">
           <div className="mb-6 md:mb-0">
-            <Link href="https://flowbite.com/" className="flex items-center">
+            <Link href="/" className="flex items-center">
               <Image
                 src={weblogo}
                 className="h-auto w-12"
@@ -85,14 +85,14 @@ const Footer = () => {
         <hr className="my-6 border-gray-200 sm:mx-auto " />
         <div className="sm:flex sm:items-center sm:justify-between">
           <span className="text-sm text-gray-500 sm:text-center ">
-            © 2023{" "}
+            © 2024{" "}
             <Link href="/" className="hover:underline">
               KHREWS™
             </Link>
             . All Rights Reserved.
           </span>
           <div className="flex mt-4 sm:justify-center sm:mt-0">
-            <a
+            <Link
               href="https://www.facebook.com/share/p/gyryTKBDFQTUJ32H/?mibextid=qi2Omg"
               className="text-gray-500 hover:text-white e"
             >
@@ -110,9 +110,9 @@ const Footer = () => {
                 />
               </svg>
               <span className="sr-only">Facebook page</span>
-            </a>
+            </Link>
 
-            <a href="#" className="text-gray-500 hover:text-white  ms-5">
+            <Link href="https://www.twitter.com/khrewsofficials" className="text-gray-500 hover:text-white  ms-5">
               <svg
                 className="w-4 h-4"
                 aria-hidden="true"
@@ -127,7 +127,7 @@ const Footer = () => {
                 />
               </svg>
               <span className="sr-only">Twitter page</span>
-            </a>
+            </Link>
           </div>
         </div>
       </div>

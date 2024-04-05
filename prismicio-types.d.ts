@@ -662,6 +662,26 @@ export interface HeroSliceDefaultPrimary {
    * - **Documentation**: https://prismic.io/docs/field#image
    */
   qaimage: prismic.ImageField<never>;
+
+  /**
+   * lets field in *Hero → Primary*
+   *
+   * - **Field Type**: Image
+   * - **Placeholder**: *None*
+   * - **API ID Path**: hero.primary.lets
+   * - **Documentation**: https://prismic.io/docs/field#image
+   */
+  lets: prismic.ImageField<never>;
+
+  /**
+   * lits field in *Hero → Primary*
+   *
+   * - **Field Type**: Image
+   * - **Placeholder**: *None*
+   * - **API ID Path**: hero.primary.lits
+   * - **Documentation**: https://prismic.io/docs/field#image
+   */
+  lits: prismic.ImageField<never>;
 }
 
 /**
@@ -707,6 +727,16 @@ export interface HeroSliceDefaultItem {
    * - **Documentation**: https://prismic.io/docs/field#link-content-relationship
    */
   goto: prismic.LinkField;
+
+  /**
+   * whatsapp field in *Hero → Items*
+   *
+   * - **Field Type**: Link
+   * - **Placeholder**: *None*
+   * - **API ID Path**: hero.items[].whatsapp
+   * - **Documentation**: https://prismic.io/docs/field#link-content-relationship
+   */
+  whatsapp: prismic.LinkField;
 }
 
 /**
@@ -807,6 +837,16 @@ export interface TeamSliceDefaultPrimary {
    * - **Documentation**: https://prismic.io/docs/field#image
    */
   banner: prismic.ImageField<never>;
+
+  /**
+   * reg field in *Team → Primary*
+   *
+   * - **Field Type**: Link
+   * - **Placeholder**: *None*
+   * - **API ID Path**: team.primary.reg
+   * - **Documentation**: https://prismic.io/docs/field#link-content-relationship
+   */
+  reg: prismic.LinkField;
 }
 
 /**

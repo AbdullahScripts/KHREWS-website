@@ -50,6 +50,22 @@
             "constraint": {},
             "thumbnails": []
           }
+        },
+        "lets": {
+          "type": "Image",
+          "config": {
+            "label": "lets",
+            "constraint": {},
+            "thumbnails": []
+          }
+        },
+        "lits": {
+          "type": "Image",
+          "config": {
+            "label": "lits",
+            "constraint": {},
+            "thumbnails": []
+          }
         }
       },
       "items": {
@@ -79,6 +95,14 @@
           "type": "Link",
           "config": {
             "label": "goto",
+            "placeholder": "",
+            "select": null
+          }
+        },
+        "whatsapp": {
+          "type": "Link",
+          "config": {
+            "label": "whatsapp",
             "placeholder": "",
             "select": null
           }

@@ -1,4 +1,5 @@
 "use client";
+
 import Link from "next/link";
 import React, { useState } from "react";
 import weblogo from "../../assests/khrews.png";
@@ -9,13 +10,13 @@ function Navbar() {
   return (
     <nav className="bg-violet-950 border-gray-200 ">
       <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
-        <button className="flex items-center space-x-3 rtl:space-x-reverse">
+        <Link href="/" className="flex items-center space-x-3 rtl:space-x-reverse">
           <Image src={weblogo} className="h-auto w-12" alt="KHREWS Logo" />
 
           <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">
             KHREWS
           </span>
-        </button>
+        </Link>
         <button
           data-collapse-toggle="navbar-default"
           onClick={toggle}

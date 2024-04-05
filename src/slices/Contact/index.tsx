@@ -1,3 +1,5 @@
+import { PrismicNextLink } from "@prismicio/next";
+import { SliceSimulator } from "@slicemachine/adapter-next/simulator";
 import Link from "next/link";
 
 const Registration = () => {
@@ -14,10 +16,12 @@ const Registration = () => {
           <div className="flex justify-center">
             <Link
               className="bg-blue-700 text-white px-6 py-3 rounded-lg text-lg hover:bg-blue-600 transition duration-300"
-              href="https://your-google-form-link"
+              href="https://forms.gle/WCA25WDF2SQNkAyu9"
+              target="_blank"
             >
               Register
             </Link>
+            
           </div>
         </div>
       </div>
@@ -39,15 +43,16 @@ const Contact = () => {
           <div className="flex flex-col md:flex-row justify-center md:space-x-4">
             <Link
               href="mailto:dev.mirxa009@gmail.com "
+              target="_blank"
               className="bg-blue-700 text-white px-6 py-3 rounded-lg text-lg hover:bg-blue-600 transition duration-300 hover:shadow-md mb-4 md:mb-0 md:w-48 text-center"
             >
               Send Email
             </Link>
             <Link
-              className="bg-green-500 text-white px-6 py-3 rounded-lg text-lg hover:bg-green-400 transition duration-300 hover:shadow-md md:w-48 text-center"
-              href="https://api.whatsapp.com/send?phone=+923340915037"
+              className="bg-green-500 text-sm text-white px-6 py-3 rounded-lg text-lg hover:bg-green-400 transition duration-300 hover:shadow-md md:w-48 text-center"
+              href="https://api.whatsapp.com/send?phone=03340915037" target="_blank"
             >
-              Send WhatsApp Message
+              WhatsApp Message
             </Link>
           </div>
         </div>
@@ -58,7 +63,7 @@ const Contact = () => {
 
 const HomePage = () => {
   return (
-    <div className="flex justify-center flex-col md:flex-row items-center">
+    <div className="flex justify-center min-h-[95vh] flex-col md:flex-row items-center">
       <Registration />
       <Contact />
     </div>

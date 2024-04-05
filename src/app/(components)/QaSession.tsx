@@ -99,7 +99,7 @@ const QASection: React.FC = () => {
       id: 3,
       question: "What are you motives ?",
       answer:
-        "Our motives in full details are mentioned separately in About page you can see there",
+        "Our Mission is Ummah's Rejuvenation(Revivitation)With Galvanization of Islamic Vanguards Endeavors for Ascension of Islam. KHREWS wanna make Enthusiastic,Ideological, Educational, Skillful &  Determinant Muslim Youth, to work for Glory of Islam - Pakistan & Serving the Nation . This Odyssey of Resurgence(Revival) Will Require a complete Dedication for Islam . We can only win the Battle Against the Evil Forces that are  against Islam, if we instead of Scattering, Stuff our all Strategies together for Islam. We wanna Prepare Muslim Ummah To be Ayubi in case of Al Aqsa , Muhammad Bin Qasim in case of Afia, Umar Bin Khatab (رضی اللہ عنہ)in Case of Running A State and Hazrat Ali رضی) اللہ عنہ) in Case of Literature And Education. KHREWS is named Both  Allama Khadim Hussain Rizvi Educational & Welfare Service ' & Sometimes' Kindling the Holy Righteousness With Educational & Welfare Services Based After inspirations from Allama Khadim Hussain Rizvi نور اللہ مرقدہ ",
     },
   ];
 
