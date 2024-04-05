@@ -1,7 +1,7 @@
 "use client";
 import { Content } from "@prismicio/client";
 import lets from "../../assests/lets.png";
-import lits from "../../assests/lits.png";
+import Lits from "../../assests/lits.png";
 import { PrismicNextImage, PrismicNextLink } from "@prismicio/next";
 // import Carousel from "@/app/(components)/Carasoul";
 import { useRouter } from "next/navigation";
@@ -198,7 +198,7 @@ const Hero = ({ slice }: HeroProps): JSX.Element => {
         <div className="w-full md:w-[27%] m-5 bg-white border border-gray-200 rounded-lg shadow">
           <div className="flex justify-center">
             {/* <PrismicNextImage className="w-[70%]" field={slice.primary.lits} /> */}
-            <Image src={lits} className="w-[70%]" alt="LITS" />
+            <Image src={Lits} className="w-[70%]" alt="LITS" />
           </div>
           <div className="p-5">
             <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900">
