@@ -42,7 +42,7 @@ const Contact = () => {
           </p>
           <div className="flex flex-col md:flex-row justify-center md:space-x-4">
             <Link
-              href="mailto:dev.mirxa009@gmail.com "
+              href="mailto:khrews12@gmail.com"
               target="_blank"
               className="bg-blue-700 text-white px-6 py-3 rounded-lg text-lg hover:bg-blue-600 transition duration-300 hover:shadow-md mb-4 md:mb-0 md:w-48 text-center"
             >
