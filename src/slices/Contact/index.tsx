@@ -52,7 +52,7 @@ const Contact = () => {
               className="bg-green-500 text-sm text-white px-6 py-3 rounded-lg text-lg hover:bg-green-400 transition duration-300 hover:shadow-md md:w-48 text-center"
               href="https://api.whatsapp.com/send?phone=923340915037" target="_blank"
             >
-             Lets Chat 
+             Lets Talk 
             </Link>
           </div>
         </div>
