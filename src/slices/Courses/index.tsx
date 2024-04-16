@@ -17,7 +17,7 @@ const Courses = ({ slice }: CoursesProps): JSX.Element => {
       data-slice-variation={slice.variation}
     >
       <div className="courses">
-        <h1 className="text-center font-bold text-4xl md:text-5xl p-5 text-blue-600">
+        <h1 className="text-center font-bold text-4xl md:text-5xl p-5 text-blue-600 yyyyyy">
           {slice.primary.heading}
         </h1>
       </div>
